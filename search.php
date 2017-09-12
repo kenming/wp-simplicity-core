@@ -4,12 +4,12 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#search-result
  *
- * @package SimplicityCore
+ * @package Simplicity Core
  */
 
 get_header(); ?>
 
-	<section id="primary" class="content-area">
+	<section id="primary" class="content-area col-md-8">
 		<main id="main" class="site-main">
 
 		<?php
@@ -46,6 +46,9 @@ get_header(); ?>
 		</main><!-- #main -->
 	</section><!-- #primary -->
 
-<?php
-get_sidebar();
-get_footer();
+	<div class="col-md-4">
+		<?php get_sidebar(); ?>
+	</div>
+
+	<?php
+		get_footer();

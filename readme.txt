@@ -1,4 +1,4 @@
-=== SimplicityCore ===
+=== Simplicity Core ===
 
 Contributors: automattic
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
@@ -9,11 +9,11 @@ Stable tag: 1.0.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
 
-A starter theme called SimplicityCore.
+A starter theme called Simplicity Core.
 
 == Description ==
 
-Starter Theme combining SimplicityCore with bootstrap.
+Starter Theme combining Simplicity Core with bootstrap.
 
 == Installation ==
 
@@ -25,7 +25,7 @@ Starter Theme combining SimplicityCore with bootstrap.
 
 = Does this theme support any plugins? =
 
-SimplicityCore includes support for Infinite Scroll in Jetpack.
+Simplicity Core includes support for Infinite Scroll in Jetpack.
 
 == Changelog ==
 

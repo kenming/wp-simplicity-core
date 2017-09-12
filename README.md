@@ -1,4 +1,4 @@
-== SimplicityCore ==
+== Simplicity Core ==
 =========
 
 A responsive WordPress starter theme based on Twitter Bootstrap and Automattic Underscore(_s). Supporting Font Awesome, multi level dropdown navigation, Schema.org markup.
@@ -6,7 +6,7 @@ A responsive WordPress starter theme based on Twitter Bootstrap and Automattic U
 == Information ==
 -----------------
 
-Theme Name: SimplicityCore
+Theme Name: Simplicity Core
 
 Theme URI: https://github.com/kenming/wp-simplicity-core/
 
@@ -27,13 +27,13 @@ The image used in the screenshot is licensed under Creative Commons Zero: http:/
 == Copyright & License ==
 -------------
 
-SimplicityCore WordPress Theme, Copyright 2017 Kenming
-SimplicityCore is distributed under the terms of the GNU GPL
+Simplicity Core WordPress Theme, Copyright 2017 Kenming
+Simplicity Core is distributed under the terms of the GNU GPL
 
-SimplicityCore WordPress Theme is derived from Underscores WordPress Theme, Copyright 2013 Automattic, Inc.
+Simplicity Core WordPress Theme is derived from Underscores WordPress Theme, Copyright 2013 Automattic, Inc.
 Underscores WordPress Theme is distributed under the terms of the GNU GPL
 
-SimplicityCore WordPress Theme bundles the following third-party resources:
+Simplicity Core WordPress Theme bundles the following third-party resources:
 
 Underscores
 Underscores is licensed under the Automattic license.

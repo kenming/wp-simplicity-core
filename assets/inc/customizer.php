@@ -1,8 +1,8 @@
 <?php
 /**
- * SimplicityCore Theme Customizer
+ * Simplicity Core Theme Customizer
  *
- * @package SimplicityCore
+ * @package Simplicity Core
  */
 
 /**

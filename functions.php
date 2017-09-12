@@ -1,10 +1,10 @@
 <?php
 /**
- * SimplicityCore functions and definitions
+ * Simplicity Core functions and definitions
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package SimplicityCore
+ * @package Simplicity Core
  */
 
 if ( ! function_exists( 'simplicity_core_setup' ) ) :
@@ -19,7 +19,7 @@ if ( ! function_exists( 'simplicity_core_setup' ) ) :
 		/*
 		 * Make theme available for translation.
 		 * Translations can be filed in the /languages/ directory.
-		 * If you're building a theme based on SimplicityCore, use a find and replace
+		 * If you're building a theme based on Simplicity Core, use a find and replace
 		 * to change 'simplicity-core' to the name of your theme in all the template files.
 		 */
 		load_theme_textdomain( 'simplicity-core', get_template_directory() . '/languages' );
@@ -46,6 +46,11 @@ if ( ! function_exists( 'simplicity_core_setup' ) ) :
 		register_nav_menus( array(
 			'menu-1' => esc_html__( 'Primary', 'simplicity-core' ),
 		) );
+
+		// Add editor CSS to style the Wordpress visual post / post editor. Ours mainly
+		// pulls in all of our fron-end CSS.
+		add_editor_style( 'assets/css/editor-style.css');
+
 
 		/*
 		 * Switch default core markup for search form, comment form, and comments
@@ -91,27 +96,10 @@ add_action( 'after_setup_theme', 'simplicity_core_setup' );
  * @global int $content_width
  */
 function simplicity_core_content_width() {
-	$GLOBALS['content_width'] = apply_filters( 'simplicity_core_content_width', 640 );
+	$GLOBALS['content_width'] = apply_filters( 'simplicity_core_content_width', 1140 );
 }
 add_action( 'after_setup_theme', 'simplicity_core_content_width', 0 );
 
-/**
- * Register widget area.
- *
- * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
- */
-function simplicity_core_widgets_init() {
-	register_sidebar( array(
-		'name'          => esc_html__( 'Sidebar', 'simplicity-core' ),
-		'id'            => 'sidebar-1',
-		'description'   => esc_html__( 'Add widgets here.', 'simplicity-core' ),
-		'before_widget' => '<section id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</section>',
-		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2>',
-	) );
-}
-add_action( 'widgets_init', 'simplicity_core_widgets_init' );
 
 /**
  * Enqueue scripts and styles.
@@ -120,13 +108,13 @@ function simplicity_core_scripts() {
 	wp_enqueue_style( 'simplicity-core-style', get_stylesheet_uri() );
 
     // load bootstrap css
-    wp_enqueue_style( 'zacklive-bootstrap', get_template_directory_uri() . '/assets/css/bootstrap/bootstrap.min.css' );	
+    wp_enqueue_style( 'simplicity-core-bootstrap', get_template_directory_uri() . '/assets/css/bootstrap/bootstrap.min.css' );	
 
     // load font awesome css
-	wp_enqueue_style( 'zacklive-fontawesome', get_template_directory_uri() . '/assets/css/FontAwesome/font-awesome.min.css' , array(), '4.7.0', 'all' );
+	wp_enqueue_style( 'simplicity-core-fontawesome', get_template_directory_uri() . '/assets/css/font-awesome/font-awesome.min.css' , array(), '4.7.0', 'all' );
 	
     // load bootstrap.js
-    wp_enqueue_script('zacklive-bootstrapjs', get_template_directory_uri().'/assets/js/bootstrap/bootstrap.min.js', array('jquery') );
+    wp_enqueue_script('simplicity-core-bootstrapjs', get_template_directory_uri().'/assets/js/bootstrap/bootstrap.min.js', array('jquery') );
 
 	wp_enqueue_script( 'simplicity-core-navigation', get_template_directory_uri() . '/assets/js/navigation.js', array(), '20151215', true );
 
@@ -164,4 +152,9 @@ require get_template_directory() . '/assets/inc/customizer.php';
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/assets/inc/jetpack.php';
 }
+
+/**
+ * Load Widgets file.
+ */
+require get_template_directory() . '/assets/inc/widgets.php';
 

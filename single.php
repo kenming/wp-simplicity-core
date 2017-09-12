@@ -4,12 +4,12 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
  *
- * @package SimplicityCore
+ * @package Simplicity Core
  */
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
+	<div id="primary" class="content-area col-md-8">
 		<main id="main" class="site-main">
 
 		<?php

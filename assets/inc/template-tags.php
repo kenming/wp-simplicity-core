@@ -4,7 +4,7 @@
  *
  * Eventually, some of the functionality here could be replaced by core features.
  *
- * @package SimplicityCore
+ * @package Simplicity Core
  */
 
 if ( ! function_exists( 'simplicity_core_posted_on' ) ) :
