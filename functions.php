@@ -158,3 +158,8 @@ if ( defined( 'JETPACK__VERSION' ) ) {
  */
 require get_template_directory() . '/assets/inc/widgets.php';
 
+/**
+ * Load Custom Navigation Walker file.
+ */
+require_once get_template_directory() . '/assets/inc/wp-bootstrap-navwalker.php';
+
