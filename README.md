@@ -24,6 +24,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 The image used in the screenshot is licensed under Creative Commons Zero: http://creativecommons.org/publicdomain/zero/1.0/
 
+___
 == Copyright & License ==
 -------------
 
@@ -39,14 +40,19 @@ Underscores
 Underscores is licensed under the Automattic license.
 Source: https://underscores.me/
 
-Bootstrap
+Bootstrap 3.3.7
 Bootstrap is licensed under the MIT license.
 Source: http://getbootstrap.com
 
-Font Awesome 4.6.3
+Font Awesome 4.7.0
 Font Awesome is licensed under SIL Open Font License.
 Source: http://fontawesome.io
 
-== Changelog ==
----------------
-= 1.0 =
+___
+## Changelog
+
+### 1.0
+- Integrated the _S plus Bootstrap & Font Awesome
+
+### 1.1 - 2018/01/09
+- Update Font Awesome to 4.7.0
